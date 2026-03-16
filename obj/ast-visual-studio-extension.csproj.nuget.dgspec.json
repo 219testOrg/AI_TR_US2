@@ -1,0 +1,53 @@
+{
+  "format": 1,
+  "restore": {
+    "/tmp/code_a4ca9791-4b47-4f95-a8ae-8b6e4ffac00b_0c51278a-3576-4f07-abdc-f08584a8d22c_p1pjvrw4/ast-visual-studio-extension.csproj": {}
+  },
+  "projects": {
+    "/tmp/code_a4ca9791-4b47-4f95-a8ae-8b6e4ffac00b_0c51278a-3576-4f07-abdc-f08584a8d22c_p1pjvrw4/ast-visual-studio-extension.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/tmp/code_a4ca9791-4b47-4f95-a8ae-8b6e4ffac00b_0c51278a-3576-4f07-abdc-f08584a8d22c_p1pjvrw4/ast-visual-studio-extension.csproj",
+        "projectName": "ast-visual-studio-extension",
+        "projectPath": "/tmp/code_a4ca9791-4b47-4f95-a8ae-8b6e4ffac00b_0c51278a-3576-4f07-abdc-f08584a8d22c_p1pjvrw4/ast-visual-studio-extension.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/tmp/code_a4ca9791-4b47-4f95-a8ae-8b6e4ffac00b_0c51278a-3576-4f07-abdc-f08584a8d22c_p1pjvrw4/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.Text.RegularExpressions": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}
