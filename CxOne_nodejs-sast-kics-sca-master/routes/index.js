@@ -207,9 +207,19 @@ exports.edit = function (req, res, next) {
     exec(function (err, todos) {
       if (err) return next(err);
 
+      // Sanitize todos content to prevent Stored XSS attacks
+      // Use validator.escape() to encode HTML special characters
+      const sanitizedTodos = todos.map(function(todo) {
+        return {
+          _id: todo._id,
+          content: validator.escape(todo.content.toString()),
+          updated_at: todo.updated_at
+        };
+      });
+
       res.render('edit', {
         title: 'TODO',
-        todos: todos,
+        todos: sanitizedTodos,
         current: req.params.id
       });
     });
